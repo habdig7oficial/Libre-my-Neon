@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+
+:root{
+    --primary-pink:rgb(255, 13, 102);
+    --primary-blue:rgb(38, 213, 255);
+    --primary-black:rgb(26, 25, 14);
+
+    --secondary-pink:rgb(255, 5, 134);
+    --terciary-pink:rgb(250, 129, 165);
+
+    --pure-black:rgb(0,0,0);
+
+    --cwm:16rem; 
+}
+
+::selection {
+    color:var(--primary-blue);
+    background-color: var(--primary-black);
+}
+
+body{
+    animation:arrive 2s;
+    overflow-x:hidden;
+}
+
+
+p{
+    font-family: 'Gulzar', serif, cursive;
+    font-size:1.1rem;
+    text-align:justify;
+}
+
+.logo{
+    font-family: 'Luckiest Guy', cursive;
+    animation: glow 3s infinite;
+    font-size: 2rem;
+    color:var(--primary-pink); 
+}
+
+.dest-max{
+    --pure-black:rgb(255, 255, 255);
+    font-family: 'Finlandica', cursive;
+    animation: glow 4s infinite;
+    font-size: 4rem;
+    color:var(--primary-pink); 
+}
+
+.cw{
+    width:var(--cwm);
+}
+
+
+.roll-b {
+  border: 16px solid var(--primary-blue); /* Light grey */
+  border-top: 16px solid var(--primary-pink); /* Blue */
+  border-radius: 50%;
+  /*width: var(--cwm);*/
+  /*padding:calc(var(--cwm)/2)*/
+  animation: ssp 3s infinite; 
+}
+
+@keyframes arrive {
+
+    0%{
+	margin-top:100%;
+    }
+
+    100%{
+	margin-top:0%;
+    }
+}
+
+@keyframes glow {
+    0%,100%{
+	text-shadow: 1px 1px 2px var(--pure-black), 0 0 1em var(--secondary-pink), 0 0 0.2em var(--terciary-pink);
+    }
+
+    50%{
+	text-shadow:none;
+    }
+}
+
+@keyframes ssp {
+    0%,100%{
+	transform: rotate(0deg);
+    }
+
+    50%{
+	transform: rotate(10deg); 
+    }
+}
