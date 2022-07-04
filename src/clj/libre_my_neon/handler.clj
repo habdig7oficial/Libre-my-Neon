@@ -25,7 +25,7 @@
         (wrap-webjars (constantly nil)))
       (ring/create-default-handler
         {:not-found
-         (constantly (error-page {:status 404, :title "404 - Page not found"}))
+         (constantly (error-page {:status 404, :title "404 - Página Não Encontrada", :url "em que você estava"}))
          :method-not-allowed
          (constantly (error-page {:status 405, :title "405 - Not allowed"}))
          :not-acceptable

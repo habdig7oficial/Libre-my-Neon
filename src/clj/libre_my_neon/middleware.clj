@@ -19,7 +19,7 @@
       (catch Throwable t
         (log/error t (.getMessage t))
         (error-page {:status 500
-                     :title "Something very bad has happened!"
+                     :title "Desculpe-nos. Um erro inesperado aconteceu!"
                      :message "We've dispatched a team of highly trained gnomes to take care of the problem."})))))
 
 (defn wrap-csrf [handler]

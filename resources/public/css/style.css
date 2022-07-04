@@ -61,6 +61,10 @@ p{
   animation: ssp 3s infinite; 
 }
 
+.hr{
+    background-color:var(--primary-blue);
+}
+
 @keyframes arrive {
 
     0%{
